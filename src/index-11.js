@@ -45,7 +45,7 @@ inputSearch.addEventListener('submit', onSubmit);
 //  ф-ція запросу на ресурс з поверненням промісу масиву
 async function onSubmit(evt) {
   console.log(evt);
-  //   evt.preventDefault();
+  evt.preventDefault();
   gallery.innerHTML = '';
   observer.unobserve(target);
   page = 1;
